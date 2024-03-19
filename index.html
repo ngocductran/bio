@@ -25,7 +25,7 @@
 
         .bio-title {
             margin: 0;
-            font-size: calc(16px + 2vw);
+            font-size: calc(16px + 2.3vw);
             letter-spacing: -1px;
             /* text-transform: uppercase; */
             text-align: center;
@@ -33,6 +33,14 @@
             font-family: "Pacifico", cursive;
             font-weight: 400;
             font-style: normal;
+            -webkit-text-stroke: 1px black;
+            color: white;
+            text-shadow:
+                2px 2px 0 #000,
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
         }
 
         .bio-content {
@@ -72,7 +80,6 @@
             float: right;
             position: absolute;
             border-radius: 30px 30px 30px 0;
-            ;
             right: 0px;
             top: 0px;
             transition: all 0.3s;
@@ -147,7 +154,7 @@
             align-items: center;
         }
 
-        .hover-box > .row{
+        .hover-box>.row {
             margin: 0 !important;
         }
 
@@ -174,12 +181,12 @@
         }
 
         .time {
-           text-align: center;
+            text-align: center;
             color: #fff;
             text-shadow: 0 0 10px #00b3ff,
                 0 0 20px #00b3ff,
                 0 0 40px #00b3ff;
-                font-family: 'Digital-7 Mono';
+            font-family: 'Digital-7 Mono';
             font-weight: 300;
         }
     </style>
@@ -188,11 +195,11 @@
 <body>
     <div class="bio text-white pt-5">
         <div class="text-center">
-            <img src="https://cdns.iconmonstr.com/wp-content/releases/preview/2016/240/iconmonstr-reddit-4.png" alt=""
+            <img src="/image/avatar.jpg" alt=""
                 class="bio-logo">
         </div>
         <h1 class="bio-title ">Trần Ngọc Đức</h1>
-        <p class="bio-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p class="bio-content">Khoảng cách sẽ không xa nếu ta xem nhau là tất cả</p>
         <div class="pl-2 pr-2">
             <div class="hover-box">
                 <div class="row">
@@ -232,10 +239,16 @@
             </div>
         </div>
         <div class="social">
-            <a href="mailto:ngocductran2000@gmail.com"><img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt="" class="circle-icon"></a>
-            <a href="https://www.twitch.tv/IsmeNDT"><img src="https://www.freepnglogos.com/uploads/purple-twitch-logo-png-18.png" alt="" class="circle-icon"></a>
-            <a href="#"><img src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Zalo-Arc.png" alt="" class="circle-icon"></a>
-            <a href="https://github.com/ngocductran"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" class="circle-icon"></a>
+            <a href="mailto:ngocductran2000@gmail.com"><img
+                    src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt=""
+                    class="circle-icon"></a>
+            <a href="https://www.twitch.tv/IsmeNDT"><img
+                    src="https://www.freepnglogos.com/uploads/purple-twitch-logo-png-18.png" alt=""
+                    class="circle-icon"></a>
+            <a href="#"><img src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Zalo-Arc.png" alt=""
+                    class="circle-icon"></a>
+            <a href="https://github.com/ngocductran"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                    alt="" class="circle-icon"></a>
         </div>
         <div class="border-top text-center">
             <p class="pt-2 pb-2 clock">
