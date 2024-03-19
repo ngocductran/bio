@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trần Ngọc Đức - LinkBio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+        .bio {
+            height: 100vh;
+            background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.4) 0%, rgba(153, 218, 255, 0.3) 100%),
+                url(https://img.pikbest.com/ai/illus_our/20230427/8539dfc63361a258d62e2d705bb3d8e9.jpg!w700wp);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        a:hover {
+            text-decoration: none !important;
+        }
+
+        .bio-title {
+            margin: 0;
+            font-size: calc(16px + 2vw);
+            letter-spacing: -1px;
+            /* text-transform: uppercase; */
+            text-align: center;
+            padding-top: 2rem;
+            font-family: "Pacifico", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .bio-content {
+            font-size: calc(16px + 1vw);
+            text-align: center;
+            padding-top: 1.3rem;
+        }
+
+        .bio-logo {
+            width: calc(5rem + 1vw);
+            height: calc(5rem + 1vw);
+            border-radius: 100%;
+            border: 3px solid #fff;
+        }
+
+        .dedcription-btn {
+            width: 100%;
+            position: relative;
+            display: inline-block;
+            border-radius: 30px;
+            background-color: #fcfcfc;
+            color: #000000;
+            text-align: center;
+            font-size: 18px;
+            padding: 9px 0;
+            transition: all 0.3s;
+            padding-right: 40px;
+            margin: 20px 5px;
+            box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.06);
+            font-weight: bold;
+        }
+
+        .dedcription-btn .btn-icon {
+            background-color: #ffa000;
+            width: 92px;
+            height: 45px;
+            float: right;
+            position: absolute;
+            border-radius: 30px 30px 30px 0;
+            ;
+            right: 0px;
+            top: 0px;
+            transition: all 0.3s;
+        }
+
+        .name-descripeion {
+            position: relative;
+            z-index: 9999;
+        }
+
+        .btn-icon::after {
+            content: "";
+            width: 0;
+            height: 0;
+            border-top: 45px solid #fcfcfc;
+            border-right: 40px solid transparent;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        .dedcription-btn:hover .btn-icon {
+            width: 100%;
+            border-radius: 30px;
+        }
+
+        .dedcription-btn:hover .btn-icon::after {
+            display: none;
+            opacity: 0.1;
+        }
+
+        .btn-icon i {
+            position: absolute;
+            right: 25px;
+            top: 15px;
+            color: #fff;
+        }
+
+        .dedcription-btn:hover {
+            color: #fff !important;
+        }
+
+        .bio-facebook {
+            background-color: #0866ff !important;
+        }
+
+        .bio-youtube {
+            background-color: hsl(0deg 100% 50%) !important;
+        }
+
+        .bio-twitter {
+            background-color: #1d9bf0 !important;
+        }
+
+        .bio-instagram {
+            /* background-color: #8bc34a !important; */
+            /* background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); */
+            background: linear-gradient(to top left,
+                    #feda75 0%,
+                    #feda75 15%,
+                    #fa7e1e 30%,
+                    #d62976 45%,
+                    #962fbf 65%,
+                    #4f5bd5 100%);
+            ;
+        }
+
+        .hover-box {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .social {
+            text-align: center;
+            margin: 100px auto;
+        }
+
+        .social img {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+
+        .circle-icon {
+            transition: 0.2s;
+            background-color: #fcfcfc;
+            border-radius: 50%;
+            margin: 0 9px;
+            padding: 5px;
+        }
+
+        .circle-icon:hover {
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bio text-white pt-5">
+        <div class="text-center">
+            <img src="https://cdns.iconmonstr.com/wp-content/releases/preview/2016/240/iconmonstr-reddit-4.png" alt=""
+                class="bio-logo">
+        </div>
+        <h1 class="bio-title ">Trần Ngọc Đức</h1>
+        <p class="bio-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <div class="pl-2 pr-2">
+            <div class="hover-box">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <a class="dedcription-btn" href="#">
+                            <span class="name-descripeion">Facebook</span>
+                            <div class="btn-icon bio-facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <a class="dedcription-btn" href="#">
+                            <span class="name-descripeion">Youtube</span>
+                            <div class="btn-icon bio-youtube">
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <a class="dedcription-btn" href="#">
+                            <span class="name-descripeion">Twitter</span>
+                            <div class="btn-icon bio-twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <a class="dedcription-btn" href="#">
+                            <span class="name-descripeion">Instagram</span>
+                            <div class="btn-icon bio-instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="social">
+            <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt=""
+                class="circle-icon">
+            <img src="https://www.freepnglogos.com/uploads/purple-twitch-logo-png-18.png" alt="" class="circle-icon">
+            <img src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Zalo-Arc.png" alt="" class="circle-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" class="circle-icon">
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
